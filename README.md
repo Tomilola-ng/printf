@@ -4,10 +4,7 @@
 
 ---
 
-The printf function sends formatted output to stdout.
-A custom \_printf() for learning purposes was developed by cohort #9 students Jimmer and Edward Ortiz.
-\_printf() function format string is a character string, beginning and ending in its initial shift state, if any.
-These arguments are placed using the percentage '%' operator
+This project is an educational endeavor as part of the ALX Software Engineering program. We've implemented a custom _printf() function in C that mirrors the functionality of the standard printf() function. The primary objective of this project is to gain a deeper understanding of the underlying mechanics of the printf() function, its formatting options, and the intricacies of string parsing in C.
 
 ---
 
@@ -44,7 +41,7 @@ The code must be compiled this way:
 
 As a consequence, be careful not to push any c file containing a main function in the root directory of your project (you could have a test folder containing all your tests files including main functions)
 
-The main files will include your main header file (holberton.h): **#include holberton.h**
+The main files will include your main header file (alx.h): **#include alx.h**
 
 ---
 
@@ -57,9 +54,9 @@ The main files will include your main header file (holberton.h): **#include holb
 
 **Examples:**
 
-- Basic String: \_printf("%s Holberton", "Hello");`
+- Basic String: \_printf("%s alx", "Hello");`
 
-  - Output: Hello Holberton
+  - Output: Hello alx
 
 - Print integers: \_printf("This is an array element: arr[%d]:%c", 32, arr[32]);`
   - Output: This is an array element arr[32]:A
@@ -78,7 +75,7 @@ Many other specifiers and flags were added and by combinig those the \_printf() 
 | ---------- | --------------------------------------------------- | --------------- |
 | `c`        | Character                                           | y               |
 | `d` or `i` | Signed integer                                      | 1024, -1024     |
-| `s`        | String of characters                                | Hello Holberton |
+| `s`        | String of characters                                | Hello alx       |
 | `b`        | Binary Representation of unsigned integer           | 01010110        |
 | `u`        | Unsigned integer                                    | 1024            |
 | `o`        | Unsigned octal                                      | 432             |
@@ -108,7 +105,7 @@ Many other specifiers and flags were added and by combinig those the \_printf() 
 
 ### Precision (In development...)
 
-| .Precision  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Precision  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `.(number)` | **For integer specifiers (`d`, `i`, `o`, `u`, `x`, `X`):** _precision_ specifies the minimum number of digits to be written. If the value to be written is shorter than this number, the result is padded with leading zeros. The value is not truncated even if the result is longer. A _precision_ of 0 means that no character is written for the value 0. **For `s`**: this is the maximum number of characters to be printed. By default all characters are printed until the ending null character is encountered. If the period is specified without an explicit value for _precision_, 0 is assumed. |
 
